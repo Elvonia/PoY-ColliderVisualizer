@@ -39,7 +39,6 @@
 
 	<ItemGroup Condition="$(Configuration.EndsWith('-MelonLoader'))">
 		<PackageReference Include="LavaGang.MelonLoader" Version="0.6.6"/>
-		<PackageReference Include="Lib.Harmony" Version="2.3.3"/>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -60,15 +59,6 @@
 	<PropertyGroup>
 		<GameLibPath>$(GamePath)/Peaks of Yore_Data/Managed</GameLibPath>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<Reference Include="Assembly-CSharp.dll">
-			<HintPath>$(GameLibPath)/Assembly-CSharp.dll</HintPath>
-		</Reference>
-		<Reference Include="Rewired_Core.dll">
-			<HintPath>$(GameLibPath)/Rewired_Core.dll</HintPath>
-		</Reference>
-	</ItemGroup>
 
 	<Target Name="CopyPackageAssembliesToSubFolder" AfterTargets="ResolveReferences">
 		<ItemGroup>

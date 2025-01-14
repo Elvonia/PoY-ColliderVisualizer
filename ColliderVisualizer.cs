@@ -1,9 +1,6 @@
 ﻿using MelonLoader;
-using Rewired;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 [assembly: MelonInfo(typeof(ColliderVisualizer), "Collider Visualizer", PluginInfo.PLUGIN_VERSION, "Kalico")]
 [assembly: MelonGame("TraipseWare", "Peaks of Yore")]
